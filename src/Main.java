@@ -1,25 +1,24 @@
 public class Main {
-    public static void main(String[] args) {
+
+
+    public static void main(String[] args ) {
         // задание 1.
-        int bissextileYear = 1;
-        int a[] =[1544];
-        a[0] = 1;
-        a[1] = 2;
-
+        int year = 2012;
+        leapYear(year);
     }
 
-    public static void bissextileYear(int[] a) {
-        if (a % 4 = 0 || a % 100 != 0) ;
-        System.out.println(a + " Год високосный ");
-        {
-        }else{
-            System.out.println(a + " Год не високосный ");
+    private static void leapYear(int year) {
 
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+            System.out.println(year + " Год високосный ");
+        }else {
+            System.out.println(year + " Год не високосный ");
         }
+
+
     }
+    // задание 2.
 
-
-}
 
 
 }
