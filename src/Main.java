@@ -14,9 +14,30 @@ public class Main {
         // задание 2.
 
         int clientAndroid = 0;
-        int clientOs =1;
-        printFoAboutDevise (clientAndroid, clientOs);
+        int clientOs = 1;
+        printFoAboutDevise(clientAndroid, clientOs);
 
+        // задание 3.
+        int deliveryDistance = 15;
+        int day = calculateDaysDistance(deliveryDistance);
+        System.out.println(" Потребуется дней: " + day);
+    }
+
+    private static int calculateDaysDistance(int deliveryDistance) {
+
+        if (deliveryDistance <= 20) {
+            int day = 1;
+            return day;
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            int day = 2;
+            return day;
+          } else {
+            if (deliveryDistance > 60 && deliveryDistance <= 100) {
+                int day = 3;
+                return day;
+            }
+        }
+        return deliveryDistance;
     }
     private static void printFoAboutDevise( int clientAndroid, int clientOs) {
 
